@@ -1,0 +1,216 @@
+{
+  "kind": "build_request",
+  "title": "GoFarm AI Agriculture Platform — Full Landing UI",
+  "projectName": "GoFarm",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a sticky top navigation bar with: GoFarm brand name and a leaf icon on the left; center menu links for Products, Equipment, and Labour; a Login text button and a filled green Get Started CTA button on the right. The navbar must have clean spacing, a white background with a subtle bottom shadow, and remain fixed at the top on scroll.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Sticky modern navbar with clean spacing",
+          "GoFarm logo with leaf icon on left",
+          "Menu items: Products, Equipment, Labour",
+          "Right side: Login button and green primary Get Started button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar is fixed/sticky and visible on scroll",
+        "GoFarm name and leaf icon render on the left",
+        "Products, Equipment, Labour links are present",
+        "Login and Get Started buttons are on the right",
+        "Get Started button uses the primary green color",
+        "Navbar has a subtle bottom shadow"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a full-width hero section with a centered headline 'Trade. Equip. Connect.' in bold large typography, a subtext line 'AI-powered platform for smart farming ecosystem.', and a voice support microphone icon button. The hero must use the soft green theme and white background with generous vertical padding.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Center headline: Trade. Equip. Connect.",
+          "Subtext: AI-powered platform for smart farming ecosystem.",
+          "Voice support microphone icon"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Headline 'Trade. Equip. Connect.' is prominently displayed and centered",
+        "Subtext is rendered below the headline in a lighter weight",
+        "A microphone icon button is present for voice support",
+        "Hero section has ample padding and uses the green and white theme"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create three large premium 3D-style feature cards displayed in a row below the hero. Card 1 is Product Exchange (AI Powered) with a leaf icon, subtitle 'Direct crop trading', feature list items Add Produce, Browse Produce, AI Price Insights mini graph, and Contact Farmer, an AI Powered badge in the top corner, and a green Open button. Card 2 is Equipment Exchange with a tractor icon, subtitle 'Rent farm equipment', feature list items Add Equipment, View Equipment, Availability status, and Contact Owner, and an Open button. Card 3 is Labour Connect with a worker helmet icon, subtitle 'Find farm labour', feature list items Post Labour Requirement, Find Labour, Worker contact list, and Location tag, and an Open button. All cards must have rounded corners, soft shadows, and smooth hover lift animations.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create three large premium 3D-style feature cards",
+          "Card 1 — Product Exchange (AI Powered)",
+          "Card 2 — Equipment Exchange",
+          "Card 3 — Labour Connect",
+          "Primary button: Open"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three cards are displayed in a responsive row on desktop",
+        "Product Exchange card has leaf icon, AI Powered badge, and all four listed features",
+        "Equipment Exchange card has tractor icon and all four listed features",
+        "Labour Connect card has worker icon and all four listed features",
+        "Each card has a prominent green Open button",
+        "Cards have rounded corners, soft shadows, and a hover lift animation",
+        "Cards stack to a single column on mobile"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add AI experience elements inside the Product Exchange card: a small sparkline mini price trend chart, an AI confidence indicator such as a percentage badge or bar, and a smart recommendation hint text. Style these with a distinct AI badge using green or gradient accent styling.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "AI Price Insights mini graph",
+          "AI confidence indicator",
+          "Price trend mini chart",
+          "Smart recommendation hint",
+          "AI badge styling"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A mini sparkline or bar chart representing price trends is visible inside the Product Exchange card",
+        "An AI confidence indicator badge or progress bar with a percentage is present",
+        "A smart recommendation hint text snippet is displayed",
+        "AI elements use a distinct badge with green or accent color styling"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a secondary feature section below the main cards containing four smaller premium cards in a single responsive row: Crop Disease Detection with a camera icon, Waste Management with a recycle icon, Reports and Insights with an analytics chart icon, and Community Posts with a social feed speech bubble icon. Each card must have a title, short descriptor, a small Open button, and a smooth hover animation.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create four smaller premium cards in one row",
+          "Crop Disease Detection (camera icon)",
+          "Waste Management (recycle icon)",
+          "Reports & Insights (analytics icon)",
+          "Community Posts (social feed icon)",
+          "Each card should have small Open button and subtle hover animation"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four secondary cards are displayed in a row on desktop",
+        "Each card has the correct icon, title, and a short descriptor",
+        "Each card has an Open button",
+        "Cards have subtle hover animation",
+        "Row collapses to two-column or one-column grid on smaller screens"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Ensure the entire application is fully responsive across desktop (1280px+), tablet (768px to 1279px), and mobile (below 768px) breakpoints. All cards must reflow into single or two-column grids on smaller screens. All buttons must be large and touch-friendly with a minimum 44px tap target. Typography must be high-contrast and legible. Navigation must collapse to a hamburger menu on mobile.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Fully responsive for desktop, tablet, and mobile",
+          "Large touch-friendly buttons",
+          "High contrast readable text",
+          "Simple navigation flow"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Layout is correct and usable at 320px, 768px, and 1280px viewport widths",
+        "Main feature cards stack vertically on mobile",
+        "All interactive buttons meet minimum 44px height tap target",
+        "Text has sufficient contrast ratio for readability",
+        "Navbar collapses to a hamburger menu on mobile"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Apply a cohesive soft green agricultural visual theme throughout: primary color palette of sage and forest greens with white backgrounds; rounded card corners of at least 16px; premium spacing and padding; soft box shadows on all cards; smooth CSS transition hover effects with scale lift and shadow deepening on cards and buttons; clean SaaS dashboard typography using a modern sans-serif font.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "soft green agricultural theme with white background, rounded cards, subtle shadows, and smooth hover animations",
+          "Soft modern shadows",
+          "Rounded corners",
+          "Premium spacing",
+          "Smooth hover effects",
+          "Clean SaaS dashboard feel"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary color is a soft or forest green consistently applied to buttons, badges, and accents",
+        "All cards use white background with rounded corners of at least 16px",
+        "Box shadows are subtle and consistent across all cards",
+        "Hover transitions animate smoothly",
+        "Typography uses a clean modern sans-serif typeface"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement a minimal Motoko backend actor with placeholder stub functions for the three main modules: Product Exchange with addProduce and browseProduce, Equipment Exchange with addEquipment and viewEquipment, and Labour Connect with postLabourRequirement and findLabour. These stubs should return empty arrays or confirmation text and will serve as the integration foundation for future features.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "connects farmers, buyers, equipment owners, and labour in one unified marketplace"
+        ]
+      },
+      "acceptanceCriteria": [
+        "main.mo contains a single actor with stub functions for all three modules",
+        "addProduce and browseProduce functions exist and compile",
+        "addEquipment and viewEquipment functions exist and compile",
+        "postLabourRequirement and findLabour functions exist and compile",
+        "All functions return valid Motoko types such as Text or empty arrays"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text",
+    "Do not edit any files listed under frontend.immutablePaths",
+    "All Motoko logic must remain in the single main actor file backend/main.mo",
+    "Do not use blue or purple as primary brand colors"
+  ],
+  "nonGoals": [
+    "Real AI or ML inference or crop disease detection logic",
+    "Authentication or user account management in this build",
+    "Real-time data feeds or live price APIs",
+    "Payment processing",
+    "Multilingual i18n implementation beyond structural readiness",
+    "Backend data persistence beyond stub functions"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Lush green agricultural field with soft morning light and a modern minimal overlay feel, suitable as a hero background (hero-bg.dim_1440x600.png)",
+      "GoFarm brand logo with a stylized leaf icon integrated into the lettermark, clean vector style on transparent background (gofarm-logo.dim_320x80.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-sticky-top-navigation-bar-with-gofarm-brand-name-and-a-leaf-icon-on-the-left-center-menu-links-for-products-equipment-and-labour-a-login-text-button-and-a-filled-green-get-started-cta-button-on-the-right-the-navbar-must-have-clean-spacing-a-white-background-with-a-subtle-bottom-shadow-and-remain-fixed-at-the-top-on-scroll",
+      "featureTitle": "Implement a sticky top navigation bar with: GoFarm brand name and a leaf icon on the left; center menu links for Products, Equipment, and Labour; a Login text button and a filled green Get Started CTA button on the right. The navbar must have clean spacing, a white background with a subtle bottom shadow, and remain fixed at the top on scroll.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-full-width-hero-section-with-a-centered-headline-trade-equip-connect-in-bold-large-typography-a-subtext-line-ai-powered-platform-for-smart-farming-ecosystem-and-a-voice-support-microphone-icon-button-the-hero-must-use-the-soft-green-theme-and-white-background-with-generous-vertical-padding",
+      "featureTitle": "Build a full-width hero section with a centered headline 'Trade. Equip. Connect.' in bold large typography, a subtext line 'AI-powered platform for smart farming ecosystem.', and a voice support microphone icon button. The hero must use the soft green theme and white background with generous vertical padding.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-three-large-premium-3d-style-feature-cards-displayed-in-a-row-below-the-hero-card-1-is-product-exchange-ai-powered-with-a-leaf-icon-subtitle-direct-crop-trading-feature-list-items-add-produce-browse-produce-ai-price-insights-mini-graph-and-contact-farmer-an-ai-powered-badge-in-the-top-corner-and-a-green-open-button-card-2-is-equipment-exchange-with-a-tractor-icon-subtitle-rent-farm-equipment-feature-list-items-add-equipment-view-equipment-availability-status-and-contact-owner-and-an-open-button-card-3-is-labour-connect-with-a-worker-helmet-icon-subtitle-find-farm-labour-feature-list-items-post-labour-requirement-find-labour-worker-contact-list-and-location-tag-and-an-open-button-all-cards-must-have-rounded-corners-soft-shadows-and-smooth-hover-lift-animations",
+      "featureTitle": "Create three large premium 3D-style feature cards displayed in a row below the hero. Card 1 is Product Exchange (AI Powered) with a leaf icon, subtitle 'Direct crop trading', feature list items Add Produce, Browse Produce, AI Price Insights mini graph, and Contact Farmer, an AI Powered badge in the top corner, and a green Open button. Card 2 is Equipment Exchange with a tractor icon, subtitle 'Rent farm equipment', feature list items Add Equipment, View Equipment, Availability status, and Contact Owner, and an Open button. Card 3 is Labour Connect with a worker helmet icon, subtitle 'Find farm labour', feature list items Post Labour Requirement, Find Labour, Worker contact list, and Location tag, and an Open button. All cards must have rounded corners, soft shadows, and smooth hover lift animations.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FeatureCard.tsx",
+        "frontend/src/components/MainFeatures.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-ai-experience-elements-inside-the-product-exchange-card-a-small-sparkline-mini-price-trend-chart-an-ai-confidence-indicator-such-as-a-percentage-badge-or-bar-and-a-smart-recommendation-hint-text-style-these-with-a-distinct-ai-badge-using-green-or-gradient-accent-styling",
+      "featureTitle": "Add AI experience elements inside the Product Exchange card: a small sparkline mini price trend chart, an AI confidence indicator such as a percentage badge or bar, and a smart recommendation hint text. Style these with a distinct AI badge using green or gradient accent styling.",
+      "files": [
+        "frontend/src/components/AIInsights.tsx",
+        "frontend/src/components/MainFeatures.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-secondary-feature-section-below-the-main-cards-containing-four-smaller-premium-cards-in-a-single-responsive-row-crop-disease-detection-with-a-camera-icon-waste-management-with-a-recycle-icon-reports-and-insights-with-an-analytics-chart-icon-and-community-posts-with-a-social-feed-speech-bubble-icon-each-card-must-have-a-title-short-descriptor-a-small-open-button-and-a-smooth-hover-animation",
+      "featureTitle": "Create a secondary feature section below the main cards containing four smaller premium cards in a single responsive row: Crop Disease Detection with a camera icon, Waste Management with a recycle icon, Reports and Insights with an analytics chart icon, and Community Posts with a social feed speech bubble icon. Each card must have a title, short descriptor, a small Open button, and a smooth hover animation.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SecondaryCard.tsx",
+        "frontend/src/components/SecondaryFeatures.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-entire-application-is-fully-responsive-across-desktop-1280px-tablet-768px-to-1279px-and-mobile-below-768px-breakpoints-all-cards-must-reflow-into-single-or-two-column-grids-on-smaller-screens-all-buttons-must-be-large-and-touch-friendly-with-a-minimum-44px-tap-target-typography-must-be-high-contrast-and-legible-navigation-must-collapse-to-a-hamburger-menu-on-mobile",
+      "featureTitle": "Ensure the entire application is fully responsive across desktop (1280px+), tablet (768px to 1279px), and mobile (below 768px) breakpoints. All cards must reflow into single or two-column grids on smaller screens. All buttons must be large and touch-friendly with a minimum 44px tap target. Typography must be high-contrast and legible. Navigation must collapse to a hamburger menu on mobile.",
+      "files": [
+        "frontend/src/components/MainFeatures.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/components/SecondaryFeatures.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-cohesive-soft-green-agricultural-visual-theme-throughout-primary-color-palette-of-sage-and-forest-greens-with-white-backgrounds-rounded-card-corners-of-at-least-16px-premium-spacing-and-padding-soft-box-shadows-on-all-cards-smooth-css-transition-hover-effects-with-scale-lift-and-shadow-deepening-on-cards-and-buttons-clean-saas-dashboard-typography-using-a-modern-sans-serif-font",
+      "featureTitle": "Apply a cohesive soft green agricultural visual theme throughout: primary color palette of sage and forest greens with white backgrounds; rounded card corners of at least 16px; premium spacing and padding; soft box shadows on all cards; smooth CSS transition hover effects with scale lift and shadow deepening on cards and buttons; clean SaaS dashboard typography using a modern sans-serif font.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

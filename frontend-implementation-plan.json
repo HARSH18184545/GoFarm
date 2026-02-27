@@ -1,0 +1,194 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "GoFarm AI Agriculture Platform — Full Landing UI",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Implement sticky top navigation bar with GoFarm branding, menu links, and action buttons",
+      "acceptanceCriteria": [
+        "Navbar is fixed/sticky and visible on scroll",
+        "GoFarm name and leaf icon render on the left",
+        "Products, Equipment, Labour links are present",
+        "Login and Get Started buttons are on the right",
+        "Get Started button uses the primary green color",
+        "Navbar has a subtle bottom shadow"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create a sticky navigation bar component with GoFarm branding (using generated gofarm-logo.dim_320x80.png from frontend/public/assets/generated/gofarm-logo.dim_320x80.png), center menu links (Products, Equipment, Labour), and right-aligned Login text button plus green filled Get Started CTA button. Use fixed positioning, white background, subtle bottom shadow, and ensure mobile hamburger menu support. Verify the build-template-react component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Navbar component at the top of the application layout to make it globally visible across all views."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build full-width hero section with centered headline, subtext, and voice support icon",
+      "acceptanceCriteria": [
+        "Headline 'Trade. Equip. Connect.' is prominently displayed and centered",
+        "Subtext is rendered below the headline in a lighter weight",
+        "A microphone icon button is present for voice support",
+        "Hero section has ample padding and uses the green and white theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create a full-width hero section component with centered bold headline 'Trade. Equip. Connect.', subtext 'AI-powered platform for smart farming ecosystem.', and a microphone icon button for voice support. Use the generated hero background image from frontend/public/assets/generated/hero-bg.dim_1440x600.png as a background with overlay. Apply soft green theme colors, white text over the background, and generous vertical padding. Verify the shadcn-ui component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Hero component below the Navbar in the main application layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create three large premium feature cards for Product Exchange, Equipment Exchange, and Labour Connect",
+      "acceptanceCriteria": [
+        "Three cards are displayed in a responsive row on desktop",
+        "Product Exchange card has leaf icon, AI Powered badge, and all four listed features",
+        "Equipment Exchange card has tractor icon and all four listed features",
+        "Labour Connect card has worker icon and all four listed features",
+        "Each card has a prominent green Open button",
+        "Cards have rounded corners, soft shadows, and a hover lift animation",
+        "Cards stack to a single column on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FeatureCard.tsx",
+          "operation": "create",
+          "description": "Create a reusable FeatureCard component accepting props for icon, title, subtitle, feature list items, badge text (optional), and button handler. Style with rounded corners (at least 16px), soft shadows, white background, and smooth hover lift animation with scale and shadow deepening. Verify the shadcn-ui component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/MainFeatures.tsx",
+          "operation": "create",
+          "description": "Create a MainFeatures section component rendering three FeatureCard instances in a responsive row: Card 1 (Product Exchange with leaf icon, 'AI Powered' badge in top corner, subtitle 'Direct crop trading', features: Add Produce, Browse Produce, AI Price Insights mini graph, Contact Farmer, green Open button), Card 2 (Equipment Exchange with tractor icon, subtitle 'Rent farm equipment', features: Add Equipment, View Equipment, Availability status, Contact Owner, Open button), Card 3 (Labour Connect with worker helmet icon, subtitle 'Find farm labour', features: Post Labour Requirement, Find Labour, Worker contact list, Location tag, Open button). Use responsive grid that collapses to single column on mobile."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the MainFeatures component below the Hero section in the main application layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add AI experience elements inside the Product Exchange card with price trend chart, confidence indicator, and recommendation hint",
+      "acceptanceCriteria": [
+        "A mini sparkline or bar chart representing price trends is visible inside the Product Exchange card",
+        "An AI confidence indicator badge or progress bar with a percentage is present",
+        "A smart recommendation hint text snippet is displayed",
+        "AI elements use a distinct badge with green or accent color styling"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AIInsights.tsx",
+          "operation": "create",
+          "description": "Create an AIInsights component containing a mini sparkline price trend chart, an AI confidence indicator (percentage badge or progress bar), and a smart recommendation hint text. Style with distinct AI badge using green or gradient accent. This component will be embedded within the Product Exchange FeatureCard. Verify the shadcn-ui component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/MainFeatures.tsx",
+          "operation": "modify",
+          "description": "Import and embed the AIInsights component within the Product Exchange (Card 1) FeatureCard in the feature list section to display AI-powered price insights."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create secondary feature section with four smaller premium cards for additional capabilities",
+      "acceptanceCriteria": [
+        "Four secondary cards are displayed in a row on desktop",
+        "Each card has the correct icon, title, and a short descriptor",
+        "Each card has an Open button",
+        "Cards have subtle hover animation",
+        "Row collapses to two-column or one-column grid on smaller screens"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SecondaryCard.tsx",
+          "operation": "create",
+          "description": "Create a reusable SecondaryCard component accepting props for icon, title, short descriptor, and button handler. Style as a smaller premium card with white background, rounded corners, soft shadow, and subtle hover animation. Verify the shadcn-ui component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SecondaryFeatures.tsx",
+          "operation": "create",
+          "description": "Create a SecondaryFeatures section component rendering four SecondaryCard instances in a responsive row: Crop Disease Detection (camera icon), Waste Management (recycle icon), Reports and Insights (analytics chart icon), and Community Posts (social feed speech bubble icon). Each card includes a title, short descriptor, and small Open button. Use responsive grid that collapses to two-column or single-column on smaller screens."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the SecondaryFeatures component below the MainFeatures section in the main application layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Ensure full responsive design across desktop, tablet, and mobile breakpoints with accessible touch targets",
+      "acceptanceCriteria": [
+        "Layout is correct and usable at 320px, 768px, and 1280px viewport widths",
+        "Main feature cards stack vertically on mobile",
+        "All interactive buttons meet minimum 44px height tap target",
+        "Text has sufficient contrast ratio for readability",
+        "Navbar collapses to a hamburger menu on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add responsive breakpoint utilities and ensure all button styles meet minimum 44px tap target height. Set high-contrast text color defaults for readability. Define mobile-first responsive utilities for card grids and layout stacking."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Configure Tailwind breakpoints for desktop (1280px+), tablet (768px-1279px), and mobile (below 768px). Ensure responsive utilities are available for all layout components."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Add responsive mobile hamburger menu that collapses the center navigation links on screens below 768px. Ensure menu items and buttons are touch-friendly with adequate spacing and 44px minimum tap targets."
+        },
+        {
+          "path": "frontend/src/components/MainFeatures.tsx",
+          "operation": "modify",
+          "description": "Apply responsive grid classes to ensure the three main feature cards stack into a single column on mobile screens (below 768px) and remain in a row on desktop."
+        },
+        {
+          "path": "frontend/src/components/SecondaryFeatures.tsx",
+          "operation": "modify",
+          "description": "Apply responsive grid classes to ensure the four secondary cards collapse to a two-column or single-column grid on smaller screens while remaining in a row on desktop."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Apply cohesive soft green agricultural visual theme throughout the application",
+      "acceptanceCriteria": [
+        "Primary color is a soft or forest green consistently applied to buttons, badges, and accents",
+        "All cards use white background with rounded corners of at least 16px",
+        "Box shadows are subtle and consistent across all cards",
+        "Hover transitions animate smoothly",
+        "Typography uses a clean modern sans-serif typeface"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Define a custom color palette with sage and forest greens as primary colors (avoiding blue and purple). Set default border radius to at least 16px for cards. Configure box shadow utilities for subtle, consistent card shadows. Set a clean modern sans-serif font family (e.g., Inter, system-ui) as the default typography."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Apply global theme styles including soft green primary color variables, white background defaults, smooth CSS transition timing functions for hover effects (scale lift and shadow deepening), and premium spacing utilities. Ensure all interactive elements have consistent hover animation behavior."
+        }
+      ]
+    }
+  ]
+}

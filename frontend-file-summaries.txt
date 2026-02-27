@@ -1,0 +1,14 @@
+{
+  "frontend/src/index.css": "Global styles with GoFarm's soft green OKLCH color system, custom typography using Plus Jakarta Sans, utility classes for card shadows, hover animations, gradient text, and AI badge styling.",
+  "frontend/tailwind.config.js": "Tailwind configuration with GoFarm's green color palette, Plus Jakarta Sans font, extended border radii (up to 3xl), custom card/navbar box shadows, and float/pulse animations.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations — browseProduce, viewEquipment, findLabour queries plus addProduce, addEquipment, postLabourRequirement mutations with cache invalidation.",
+  "frontend/src/components/Navbar.tsx": "Sticky top navigation bar with GoFarm branding, desktop nav links, voice/login/CTA buttons, and mobile hamburger menu — fixed conflicting `block flex` classnames on mobile nav links by using only `flex`.",
+  "frontend/src/components/Hero.tsx": "Full-width hero section with animated gradient background, \"Trade. Equip. Connect.\" headline, subtext, CTA buttons including voice support, and platform stats row.",
+  "frontend/src/components/AIInsights.tsx": "AI insights widget with sparkline price trend chart, confidence progress bar, and recommendation hint — uses `shrink-0` (Tailwind v3 compliant) instead of `flex-shrink-0`.",
+  "frontend/src/components/FeatureCard.tsx": "Reusable premium feature card with icon, badge, feature list, and Open button — updated `flex-shrink-0` to `shrink-0` and removed unused `accentColor` prop usage.",
+  "frontend/src/components/MainFeatures.tsx": "Main features section rendering three FeatureCards for Product Exchange (with AIInsights), Equipment Exchange, and Labour Connect in a responsive 3-column grid.",
+  "frontend/src/components/SecondaryCard.tsx": "Smaller premium card component for secondary features with icon, title, description, and a minimal Open link button with hover animation.",
+  "frontend/src/components/SecondaryFeatures.tsx": "Secondary features section with four SecondaryCards for Crop Disease Detection, Waste Management, Reports & Insights, and Community Posts in a responsive 2/4-column grid.",
+  "frontend/src/components/Footer.tsx": "Site footer with GoFarm branding, navigation links, copyright year, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/App.tsx": "Root application component composing Navbar, Hero, MainFeatures, SecondaryFeatures, and Footer into a full-page layout."
+}

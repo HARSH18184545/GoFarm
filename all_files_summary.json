@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Motoko actor defining stub endpoints for three modules: Product Exchange (addProduce, browseProduce), Equipment Exchange (addEquipment, viewEquipment), and Labour Connect (postLabourRequirement, findLabour), all returning placeholder values.",
+  "feature_evidence.json": "Feature evidence report mapping implemented features (navbar, hero, feature cards, etc.) to their source files, UI component dependencies, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "JSON document providing one-line descriptions of each frontend source file, serving as a quick reference for the purpose and key details of every component, hook, and config file.",
+  "frontend/index.css": "Base Tailwind CSS file defining OKLCH-based CSS custom properties for light and dark themes covering background, foreground, card, primary, border, chart, and sidebar color tokens.",
+  "frontend/index.html": "Minimal HTML entry point for the GoFarm React app, mounting the app into a root div and loading the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that composes Navbar, Hero, MainFeatures, SecondaryFeatures, and Footer into a full-page flex layout.",
+  "frontend/src/components/AIInsights.tsx": "AI insights widget displaying a sparkline price trend chart, an AI confidence progress bar at 92%, and a sell-timing recommendation tip inside a styled card.",
+  "frontend/src/components/FeatureCard.tsx": "Reusable premium feature card component rendering an icon, title, subtitle, optional badge, a list of feature items with optional extras, and a gradient Open button with hover animations.",
+  "frontend/src/components/Footer.tsx": "Site footer with GoFarm branding, navigation links for Products/Equipment/Labour/Privacy/Terms, copyright year, and a caffeine.ai attribution link with UTM parameters.",
+  "frontend/src/components/Hero.tsx": "Full-width hero section featuring decorative blobs, an AI badge, the 'Trade. Equip. Connect.' headline with gradient text, subtext, CTA and Voice Support buttons, and a stats row showing farmers, trade volume, and AI accuracy.",
+  "frontend/src/components/MainFeatures.tsx": "Defines and renders the three core marketplace feature cards (Product Exchange, Equipment Exchange, Labour Connect) in a responsive grid section, using FeatureCard and AIInsights components.",
+  "frontend/src/components/Navbar.tsx": "Responsive navigation bar with logo, desktop nav links, voice/login/get-started actions, and a collapsible mobile menu.",
+  "frontend/src/components/SecondaryCard.tsx": "Reusable card component displaying an icon, title, description, and an 'Open' button with hover animations for secondary feature items.",
+  "frontend/src/components/SecondaryFeatures.tsx": "Renders a grid of four secondary feature cards (Crop Disease Detection, Waste Management, Reports, Community Posts) using the SecondaryCard component.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and provider, exposing login/logout functions, identity state, and login status via a React context and custom hook.",
+  "frontend/src/hooks/useQueries.ts": "Exports React Query hooks for reading (browseProduce, viewEquipment, findLabour) and mutating (addProduce, addEquipment, postLabourRequirement) backend canister data.",
+  "frontend/src/index.css": "Global stylesheet defining the GoFarm green theme via CSS custom properties (light/dark), Tailwind layers, and utility classes for shadows, gradients, and card hover effects.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration for the GoFarm frontend, extending the default theme with custom colors (using oklch CSS variables), typography, border radii, shadows, animations, and enabling dark mode via class. Includes plugins for typography, container queries, and animate.",
+  "project_state.json": "Project state document describing GoFarm, an AI-powered agriculture marketplace UI, including its architectural notes, design theme, image requirements, and a list of already-implemented features such as navbar, hero section, feature cards, and other UI components."
+}

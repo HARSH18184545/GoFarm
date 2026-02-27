@@ -1,0 +1,95 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-27T21:22:17.008Z",
+  "summary": "The diff implements nearly all requested requirements well. The backend Motoko stub functions are complete. The frontend includes a sticky navbar, hero section, three main feature cards with AI insights, four secondary feature cards, responsive layout, and a cohesive green theme. Two notable gaps exist: the required hero background image and brand logo image assets are not present in the diff, with CSS gradients and inline icons used instead. Minor deviations exist in the hero microphone button implementation. Several unrequested features were added.",
+  "missing_requirements": [
+    {
+      "requirement": "Hero background image asset: Lush green agricultural field with soft morning light (hero-bg.dim_1440x600.png)",
+      "reason": "No image file hero-bg.dim_1440x600.png appears in the diff. The hero uses a CSS gradient instead.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/index.css"
+      ]
+    },
+    {
+      "requirement": "GoFarm brand logo image asset with stylized leaf icon integrated into the lettermark (gofarm-logo.dim_320x80.png)",
+      "reason": "No image file gofarm-logo.dim_320x80.png appears in the diff. The navbar uses an inline Lucide Leaf icon and text instead.",
+      "evidence": [
+        "frontend/src/components/Navbar.tsx"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "requirement": "A voice support microphone icon button as a standalone icon button in the hero section",
+      "reason": "The hero has a 'Voice Support' button with a Mic icon but it is a full CTA-style button rather than a dedicated standalone microphone icon button as described in the requirement.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Stats row in the Hero section showing '50K+ Farmers Connected', currency trade volume, and AI accuracy percentage",
+      "reason": "The build request does not mention any statistics row or platform metrics display in the hero section.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    },
+    {
+      "description": "Footer component with navigation links and caffeine.ai attribution",
+      "reason": "The build request does not mention a footer component in any requirement.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "description": "Voice/Mic button in the desktop navbar right actions area",
+      "reason": "The build request specifies only Login and Get Started buttons on the right of the navbar. A voice mic button in the navbar was not requested.",
+      "evidence": [
+        "frontend/src/components/Navbar.tsx"
+      ]
+    },
+    {
+      "description": "AI badge pill labeled 'AI-Powered Agriculture Platform' at the top of the hero section above the headline",
+      "reason": "The build request does not specify an AI badge pill above the main headline in the hero section.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    },
+    {
+      "description": "React Query hooks wiring backend actor calls to frontend components",
+      "reason": "The build request does not ask for frontend-to-backend integration hooks. Backend stubs are described as a future integration foundation only.",
+      "evidence": [
+        "frontend/src/hooks/useQueries.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/hooks/useInternetIdentity.ts"
+      ]
+    }
+  ],
+  "confidence": 0.82,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AIInsights.tsx",
+    "frontend/src/components/FeatureCard.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/MainFeatures.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/SecondaryCard.tsx",
+    "frontend/src/components/SecondaryFeatures.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}
